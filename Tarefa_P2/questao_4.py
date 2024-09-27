@@ -16,7 +16,6 @@ def main():
         except ValueError:
             continue
 
-
     for numero, frequencia in frequencias.items():
         print(f"O número {numero} apareceu {frequencia} vez(es).")
     print("Fim...")
