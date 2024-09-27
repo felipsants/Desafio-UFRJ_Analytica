@@ -13,7 +13,7 @@ class Tabuleiro:
 
     def movimentos_cavalo_gerador(self, posicao):
         if not self.posicao_valida(posicao):
-            raise ValueError("Posição inválida!")
+            raise ValueError("Posição inválida")
 
         x = self.colunas[posicao[0]]
         y = int(posicao[1])
@@ -30,7 +30,7 @@ def main():
     while True:
         posicao_inicial = input().lower()
         if posicao_inicial == 'f':
-            print("Programa encerrado.")
+            print("Fim...")
             break
 
         try:
